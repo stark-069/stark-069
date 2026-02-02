@@ -1,108 +1,73 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2867
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\froman\fcharset0 Times-Roman;\f2\froman\fcharset0 Times-Bold;
-}
-{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
-{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+<h1 align="center">Hi 👋, I'm Abhiroop Gohar</h1>
+<h3 align="center">Engineering Physics Undergrad @ IIT Indore</h3>
+<h4 align="center">Quantum Computing • AI/ML • Full Stack Python • Computer Vision</h4>
 
-\f0\fs24 \cf0 # Smart Face Attendance System with Flask & OpenCV\
-\
-A real-time biometric attendance solution that integrates computer vision with a web-based management interface.\
-\
-![Python](https://img.shields.io/badge/Python-3.10%2B-blue) ![OpenCV](https://img.shields.io/badge/OpenCV-DNN-red) ![Flask](https://img.shields.io/badge/Flask-Backend-green) ![Status](https://img.shields.io/badge/Status-Active-success)\
-\
-## Introduction\
-This project automates the traditional attendance process using Facial Recognition. It leverages a Deep Neural Network (DNN) for robust face detection and a lightweight embedding technique for recognition. The system launches a live camera window to mark attendance and instantly logs the data into a secure Word Document (.docx), accessible via a Flask API.\
-\
-## Repository Structure\
-\
-flask-face-attendance/\
-\uc0\u9500 \u9472 \u9472  known_faces/              # Database of authorized users (add JPGs here)\
-\uc0\u9500 \u9472 \u9472  app.py                    # Flask API for triggering the system\
-\uc0\u9500 \u9472 \u9472  attendance.py             # Core recognition logic & logging script\
-\uc0\u9500 \u9472 \u9472  get.py                    # Helper script to retrieve logs\
-\uc0\u9500 \u9472 \u9472  deploy.prototxt.txt       # Caffe model architecture\
-\uc0\u9500 \u9472 \u9472  res10_300x300...model     # Pre-trained face detection weights\
-\uc0\u9500 \u9472 \u9472  requirements.txt          # List of dependencies\
-\uc0\u9492 \u9472 \u9472  README.md                 # Documentation\
-\
-## Key Features\
-\
-* **Live Recognition Window:** Opens a real-time video feed that detects faces, draws bounding boxes, and displays names with confidence scores.\
-* **Automated Logging:** Instantly marks attendance in a daily report file (Attendance_Log.docx) with the exact Date and Time.\
-* **Flask Integration:** Includes a REST API to trigger recognition or fetch attendance records remotely.\
-* **Hybrid Architecture:** Uses a pre-trained ResNet-10 SSD for high-accuracy detection and a custom pixel-based embedding for lightweight recognition.\
-\
-## Tech Stack & Methodology\
-\
-| Component | Technology | Description |\
-| :--- | :--- | :--- |\
-| **Detection** | OpenCV DNN (Caffe) | Single Shot Detector (SSD) framework with ResNet-10 backbone. |\
-| **Recognition** | NumPy & Cosine Similarity | Flattened 100x100 pixel vectors compared using cosine distance. |\
-| **Backend** | Flask | Exposes endpoints like /record and /attendance. |\
-| **Reporting** | Python-Docx | Automates MS Word document generation. |\
-\
-## Results & Analysis\
-\
-### 1. Detection Model (SSD)\
-We utilize a Single Shot Detector (SSD) with a ResNet-10 backbone. Unlike Haar Cascades, this DNN approach is robust against:\
-* Partial occlusions.\
-* Varying lighting conditions.\
-* Side-profile faces (up to ~45 degrees).\
-\
-### 2. Recognition Logic\
-The system computes a similarity score between the live face and the database using Cosine Similarity:\
-\
-$$\\text\{Similarity\}(A, B) = \\frac\{A \\cdot B\}\{\\|A\\| \\|B\\|\}$$\
-\
-* **Threshold:** A strict confidence threshold of 0.55 is applied.\
-* **Performance:** Matches are processed in real-time (<100ms latency) on standard CPU hardware without needing a GPU.\
-\
-## Installation & Usage\
-\
-### Step 1: Clone & Install\
-```bash\
-git clone [https://github.com/your-username/flask-face-attendance.git](https://github.com/your-username/flask-face-attendance.git)\
-cd flask-face-attendance\
-pip install -r requirements.txt\
-\
-### Step 2: Add Users\
-Add clear photos of the people you want to recognize into the `known_faces/` folder.\
-* **Filename format:** `name.jpg` (e.g., `abhiroop.jpg`)\
-* *Note: Ensure the face is clearly visible and well-lit.*\
-\
-### Step 3: Run the System\
-You can run the system in two modes depending on your needs.\
-\
-\pard\pardeftab720\partightenfactor0
+<p align="center">
+  <a href="https://github.com/ryo-ma/github-profile-trophy">
+    <img src="https://github-profile-trophy.vercel.app/?username=stark-069&theme=flat&no-frame=true&margin-w=4" alt="stark-069" />
+  </a>
+</p>
 
-\f1 \cf0 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 **Option A: Standalone Mode (Terminal)** \
-Run this command to launch the recognition window immediately: \
-```bash \
-python attendance.py # Press 'q' on your keyboard to quit the camera window\
-\
-\pard\pardeftab720\partightenfactor0
+<p align="center">
+  I am a developer exploring the intersection of <b>Physics and Code</b>. Currently building scalable solutions in Quantum Algorithms and Computer Vision.
+</p>
 
-\f2\b \cf0 \strokec2 **Option B: Web Server Mode (Flask)**\
-\pard\pardeftab720\partightenfactor0
+<p align="center">
+  🌱 I’m currently learning <b>Quantum Neural Networks (QNNs) & Advanced CV</b><br>
+  📫 Reach me at <b>abhi.gohar2111@gmail.com</b>
+</p>
 
-\f1\b0 \cf0 \strokec2  Run this command to start the web API
-\f0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
-\cf0 python app.py\
-# Once running, open your browser and go to:\
-# [http://127.0.0.1:5000/record](http://127.0.0.1:5000/record)\
-\
-## References\
-\
-1.  **Liu, W., et al. (2016).** SSD: Single Shot MultiBox Detector. *European Conference on Computer Vision (ECCV)*.\
-2.  **He, K., et al. (2016).** Deep Residual Learning for Image Recognition. *CVPR*.\
-3.  **OpenCV Documentation.** Deep Learning with OpenCV DNN Module.\
-\
-## Author\
-\
-**_Abhiroop Gohar_**\
-* B.Tech Engineering Physics, IIT Indore\
-}
+<div align="center">
+  <a href="https://linkedin.com/in/abhiroop-gohar" target="blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin" /></a>
+  <a href="https://stackoverflow.com/users/abhiroop-gohar" target="blank"><img src="https://img.shields.io/badge/Stack_Overflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white" alt="stackoverflow" /></a>
+  <a href="https://codeforces.com/profile/stark_003" target="blank"><img src="https://img.shields.io/badge/Codeforces-445f9d?style=for-the-badge&logo=codeforces&logoColor=white" alt="codeforces" /></a>
+  <a href="https://discord.gg/GPFZTf9Pm" target="blank"><img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" alt="discord" /></a>
+</div>
+
+<hr/>
+
+<h3 align="center">🛠️ Technical Arsenal</h3>
+
+<p align="center">
+  <b>Quantum & AI/ML</b><br>
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white" alt="pytorch"/>
+  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat&logo=tensorflow&logoColor=white" alt="tensorflow"/>
+  <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat&logo=opencv&logoColor=white" alt="opencv"/>
+  <img src="https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white" alt="pandas"/>
+  <img src="https://img.shields.io/badge/Scikit_Learn-F7931E?style=flat&logo=scikit-learn&logoColor=white" alt="scikit"/>
+</p>
+
+<p align="center">
+  <b>Languages</b><br>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" alt="python"/>
+  <img src="https://img.shields.io/badge/C++-00599C?style=flat&logo=c%2B%2B&logoColor=white" alt="cpp"/>
+  <img src="https://img.shields.io/badge/C-00599C?style=flat&logo=c&logoColor=white" alt="c"/>
+  <img src="https://img.shields.io/badge/MATLAB-e16737?style=flat&logo=mathworks&logoColor=white" alt="matlab"/>
+  <img src="https://img.shields.io/badge/JavaScript-323330?style=flat&logo=javascript&logoColor=F7DF1E" alt="js"/>
+  <img src="https://img.shields.io/badge/Dart-0175C2?style=flat&logo=dart&logoColor=white" alt="dart"/>
+</p>
+
+<p align="center">
+  <b>Web & Backend</b><br>
+  <img src="https://img.shields.io/badge/Flask-000000?style=flat&logo=flask&logoColor=white" alt="flask"/>
+  <img src="https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white" alt="node"/>
+  <img src="https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB" alt="react"/>
+  <img src="https://img.shields.io/badge/Next.js-000000?style=flat&logo=nextdotjs&logoColor=white" alt="next"/>
+  <img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat&logo=firebase&logoColor=black" alt="firebase"/>
+</p>
+
+<p align="center">
+  <b>Tools & Creative</b><br>
+  <img src="https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white" alt="git"/>
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white" alt="docker"/>
+  <img src="https://img.shields.io/badge/Unity-000000?style=flat&logo=unity&logoColor=white" alt="unity"/>
+  <img src="https://img.shields.io/badge/Blender-E87D0D?style=flat&logo=blender&logoColor=white" alt="blender"/>
+  <img src="https://img.shields.io/badge/Figma-F24E1E?style=flat&logo=figma&logoColor=white" alt="figma"/>
+</p>
+
+<br>
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=stark-069&show_icons=true&locale=en&theme=radical&hide_border=true" alt="stats" height="180"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=stark-069&show_icons=true&locale=en&layout=compact&theme=radical&hide_border=true" alt="languages" height="180"/>
+</div>
