@@ -48,5 +48,3 @@ I am a quantum algorithms researcher bridging the gap between theoretical physic
 </p>
 
 <br>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=stark-069&theme=tokyo-night&hide_border=true&bg_color=0d1117" width="100%"/>
